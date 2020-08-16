@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    list-style: none;
+    background-color: rgb(248, 204, 204);
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;       /* if text size is very big */
+}
+ul li{
+    display: inline-block;
+    /* float : left */
+}
+
+ul li a{
+    width: 150px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding:15px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    background-color: red;
+    color: rgb(248, 204, 204);
+}
+
+#banner{
+    position: relative;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.txt{
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    color: aliceblue;
+    font-size: 5em;
+}
+
+img{
+    width: 100%;
+}
+#images::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#images{
+    margin:100px;    
+}
+
+#images img{
+    border-radius: 50%;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+}
+.img1{
+    margin-left: 200px;
+    float: left;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+
+}
+.img2{
+    margin-right: 200px;
+    float: right;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;    
+}
+.img3{
+    margin-right:95px;
+    float: right;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+  
+}
+.img4{
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+}
+
+#content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#content{
+    margin: 30px;
+}
+#leftside{
+    float: left;
+    width: 50%;
+    background-color: violet;
+    height: 618px;
+    color: white;
+   
+
+}
+
+#leftside .txt2{
+    padding: 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+#rightside img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.txt1{
+   position: absolute;
+   top: 1%;
+   right: 40%;
+   font-weight: bolder;
+   font-size: 30px;
+   
+}
+
+#rightside{
+    float: right;
+    width: 49%;
+    height: 618px;
+    
+}
+#rightside> .article{
+    position: relative;
+    width:100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+#portfolio{
+    padding: 20px;
+}
+#portfolio h4{
+    text-align: center;
+}
+#portfolio .div1{
+    margin:  28px;
+    padding: 28px;
+    background-color: gainsboro;
+    width:300px;
+    float: left;
+    height: 400px;
+    border-radius: 10px;
+}
+#portfolio .div2{
+    margin:  28px;
+    padding: 28px;
+    background-color: gainsboro;
+    width:300px;
+    height: 400px;
+    border-radius: 10px;
+    float: left;
+}
+#portfolio .div3{
+    margin:  28px;
+    padding: 28px;
+    background-color: gainsboro;
+    width:300px;
+    float: left;
+    height: 400px;
+    border-radius: 10px;
+}
+#portfolio .div4{
+    margin:  28px;
+    padding: 28px;
+    background-color: gainsboro;
+    width:300px;
+    float: left;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#portfolio img{
+    width: 100%;
+    height: 40%;
+}
+#portfolio a{
+    display: block;
+    background-color: red;
+    height: 25px;
+    border-radius: 5px;
+    color: cornsilk;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 4px;
+}
+#portfolio a:hover{
+    background-color: darkblue;
+}
+#portfolio h1{
+    color:darkred;
+    text-transform: uppercase;
+}
+
+#footer{
+    margin: 10px;    
+}
+
+.ftr{
+    background-color: rgb(179, 234, 236);
+    height: 100px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+
