@@ -1,6 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 99%;
+    margin: auto;
 }
 
 ul{
@@ -20,7 +26,7 @@ ul li{
 }
 
 ul li a{
-    width: 150px;
+    width: 200px;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -38,8 +44,13 @@ ul li a:hover{
 
 #banner{
     position: relative;
-    padding: 30px;
-    margin-top: 50px;
+    margin-top: 80px;
+    width: 100%;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
 }
 
 .txt{
@@ -50,72 +61,41 @@ ul li a:hover{
     font-size: 5em;
 }
 
-img{
-    width: 100%;
-}
+
 #images::after{
     content: '';
     display: block;
     clear: both;
 }
 #images{
-    margin:100px;    
+    margin:100px auto;  
+    width: 100%; 
 }
 
-#images img{
-    border-radius: 50%;
-    padding: 20px;
-}
 h1{
     text-align: center;
 }
-.img1{
-    margin-left: 200px;
-    float: left;
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
 
-}
-.img2{
-    margin-right: 200px;
-    float: right;
-    height: 200px;
+.circle-img{
     border-radius: 50%;
-    width: 200px;    
+    float: left;
+    margin: 2% 5% 5%;
 }
-.img3{
-    margin-right:95px;
-    float: right;
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-  
-}
-.img4{
-    margin-right: 100px;
-    float: right;
-    height: 200px;
-    border-radius: 50%;
-    width: 200px;
-}
+
 
 #content::after{
     content: '';
     display: block;
     clear: both;
 }
-#content{
-    margin: 30px;
-}
+
+
 #leftside{
     float: left;
     width: 50%;
     background-color: violet;
     height: 618px;
     color: white;
-   
-
 }
 
 #leftside .txt2{
@@ -128,14 +108,12 @@ h1{
     height: 100%;
 }
 
-
 .txt1{
    position: absolute;
    top: 1%;
    right: 40%;
    font-weight: bolder;
-   font-size: 30px;
-   
+   font-size: 30px;   
 }
 
 #rightside{
@@ -152,43 +130,18 @@ h1{
 }
 
 #portfolio{
-    padding: 20px;
+    margin: 60px auto;
 }
+
 #portfolio h4{
     text-align: center;
 }
-#portfolio .div1{
-    margin:  28px;
-    padding: 28px;
+
+#portfolio .portfolio-box{
+    margin:  50px 50px 80px;
+    padding: 5px;
     background-color: gainsboro;
-    width:300px;
-    float: left;
-    height: 400px;
-    border-radius: 10px;
-}
-#portfolio .div2{
-    margin:  28px;
-    padding: 28px;
-    background-color: gainsboro;
-    width:300px;
-    height: 400px;
-    border-radius: 10px;
-    float: left;
-}
-#portfolio .div3{
-    margin:  28px;
-    padding: 28px;
-    background-color: gainsboro;
-    width:300px;
-    float: left;
-    height: 400px;
-    border-radius: 10px;
-}
-#portfolio .div4{
-    margin:  28px;
-    padding: 28px;
-    background-color: gainsboro;
-    width:300px;
+    width:316px;
     float: left;
     height: 400px;
     border-radius: 10px;
@@ -217,9 +170,6 @@ h1{
     text-transform: uppercase;
 }
 
-#footer{
-    margin: 10px;    
-}
 
 .ftr{
     background-color: rgb(179, 234, 236);
@@ -227,9 +177,7 @@ h1{
     color: black;
     text-align: center;
     padding-top: 50px;
-    margin-left: 30px;
     margin-bottom: 30px;
-    margin-right: 30px;
 }
 
 
