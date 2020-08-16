@@ -68,7 +68,7 @@ ul li a:hover{
     clear: both;
 }
 #images{
-    margin:100px auto;  
+    margin: 100px auto;  
     width: 100%; 
 }
 
@@ -170,14 +170,23 @@ h1{
     text-transform: uppercase;
 }
 
-
+#footer{
+    margin-bottom: 30px;
+}
 .ftr{
     background-color: rgb(179, 234, 236);
     height: 100px;
     color: black;
     text-align: center;
-    padding-top: 50px;
-    margin-bottom: 30px;
+    padding: 20px;
+    margin: auto;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 
