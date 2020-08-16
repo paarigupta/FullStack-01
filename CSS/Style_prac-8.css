@@ -138,10 +138,10 @@ h1{
 }
 
 #portfolio .portfolio-box{
-    margin:  50px 50px 80px;
+    margin: 34px 34px;
     padding: 5px;
     background-color: gainsboro;
-    width:316px;
+    width:300px;
     float: left;
     height: 400px;
     border-radius: 10px;
@@ -157,7 +157,7 @@ h1{
     height: 25px;
     border-radius: 5px;
     color: cornsilk;
-    width: 300px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     padding-top: 4px;
