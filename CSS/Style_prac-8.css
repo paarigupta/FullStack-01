@@ -81,7 +81,6 @@ h1{
     margin: 2% 5% 5%;
 }
 
-
 #content::after{
     content: '';
     display: block;
