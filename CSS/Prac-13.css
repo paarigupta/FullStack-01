@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------- main-content ------------------------------ */
+body{
+    font-size: 18px;
+}
+
+.main-content{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: gray;
+}
+
+/*---------------------------------- footer ------------------------------------------ */
+.footer{
+    width: 100%;
+    background-color: #26272b;
+}
+ 
+/*--------------------------------- Section-1 -------------------------------------------- */
+.sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 10px;
+}
+
+.about{
+    width: 40%;
+}
+
+.sec1 h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about p{
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    
+}
+
+.sec1 ul{
+    list-style: none;
+}
+
+.sec1 ul li{
+    padding-bottom: 10px;
+}
+.sec1 ul a{
+    text-decoration: none;
+    color: gray;
+}
+
+.link-1 ul a:hover{
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+.link-2 ul a:hover{
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+span{
+    color: gray;
+}
+
+i{
+    color: gray;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+/* ------------------------------------------- Section-2 --------------------------------------------- */
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.sec2 h2{
+    color: gray;
+    font-size: 30px;
+}
+
+.sec2 a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.sec2 a:hover{
+    background-color: blue;
+}
+
+/* -------------------------------------------- Section-3 ------------------------------------------------ */
+
+.sec3{
+    display: flex;
+    justify-content: center;
+}
+
+.sec3 ul{
+    list-style: none;
+    margin: 20px;
+}
+
+.sec3 ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 15px 17px;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.sec3 ul li i{
+    color: black;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.sec3 ul li i:hover{
+    font-size: 22px;
+}
+.sec3 ul li:nth-child(1):hover{
+    background-color:#283593;
+    
+}
+.sec3 ul li:nth-child(2):hover{
+    background-color:#4FC3F7;
+}
+.sec3 ul li:nth-child(3):hover{
+    background-color:#d32f2f;
+}
+.sec3 ul li:nth-child(4):hover{
+    background-color:#303F9F;
+}
+.sec3 ul li:nth-child(5):hover{
+    background-color:#D81B60;
+}
+
+/* ----------------------------------------- Section-4 -------------------------------------------- */
+
+.sec4{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.sec4 p{
+    color: gray;
+    position: relative;
+}
+
+.sec4 p a{ 
+    color: gray;
+    text-decoration:none;
+}
+
+.sec4 p::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: indianred;
+    transition: all .3s;
+
+}
+
+.sec4 p:hover::after{
+    width: 100%;
+}
+
+hr{
+    opacity: 0.2;
+}
+
+/* -------------------------------------- Responsiveness ----------------------------------------- */
+@media (max-width: 840px){
+    .sec1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 25px 10px;
+    }
+    .about{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:480px){
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 25px 10px;
+    }
+
+    .link-1{
+        margin-bottom: 20px;
+    }
+
+    .link-2{
+        margin-bottom: 20px;
+    }
+    
+    .sec2 h2{
+        color: gray;
+        font-size: 20px;
+    }
+    
+    .sec2 a{
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .sec3 ul{
+        list-style: none;
+        margin:20px;
+    }
+    
+    .sec3 ul li{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 12px 10px;
+        background-color: lightblue;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+    
+    .sec3 ul li i{
+        color: black;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .sec4 p a{ 
+        color: gray;
+        text-decoration:none;
+        font-size: 12px;
+    }
+
+    .sec4 p{
+        font-size: 12px;
+        color: gray;
+        position: relative;
+    }
+    
+}
