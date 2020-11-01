@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image:linear-gradient(to left, rgb(240, 140, 90), rgb(233, 199, 48));;
+    }
+    h1{
+        color: rgb(75, 3, 71);
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align:center;          
+    }
+
+    button {
+        font-size: 30px;
+        display:inline-block;
+        width: 40px;
+    }
+    #minus{
+        margin-left: 32rem;
+    }
+    #plus{
+        margin-left: 13rem;
+    }
+    p{
+        display: inline-block;
+        margin-left: 180px;
+        font-size: 40px;
+        color: rgb(9, 2, 41);
+    }
+</style>
+
+<body>
+    <h1>COUNTER</h1>
+    <button id="minus" disabled>-</button>
+    <p id="counter"> 0 </p>
+    <button id="plus">+</button>
+
+    <script>
+        var sub = document.getElementById('minus');
+        var add = document.getElementById('plus');
+        var no = document.getElementById('counter');
+
+        var c=0;
+        function btn()
+        {
+            if(c==0)
+            {
+                sub.disabled=true;
+            }
+            else
+            {
+                sub.disabled=false;
+            }
+        }
+        add.addEventListener('click',function()
+        {
+            c+=1;
+            no.innerHTML = c;
+            btn();
+        })
+        sub.addEventListener('click',function()
+        {
+            c-=1;
+            no.innerHTML = c;
+            btn();
+        })
+        
+    </script>
+</body>
+</html>
