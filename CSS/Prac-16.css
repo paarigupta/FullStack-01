@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(120deg, rgb(174, 226, 230),rgb(1, 44, 61));
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+h1,
+form{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+
+form input,
+form button{
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    background: white;
+    outline: none;
+}
+
+form button{
+    color: blue;
+    cursor: pointer;
+}
+
+form button:hover{
+    color: white;
+    background-color: blue;
+}
+
+.todo-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 20%;
+}
+
+.todo{
+    margin: 8px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-Item{
+    flex: 1;
+    margin: 0px 8px;
+}
+
+.check-btn, .delete-btn{
+    background-color: rgb(53, 167, 53);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 12px;
+}
+
+.delete-btn{
+    background-color: rgb(192, 51, 51);
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
+}
