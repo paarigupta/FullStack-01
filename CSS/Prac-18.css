@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background:linear-gradient(to right, rgb(29, 29, 94) , rgb(133, 34, 34)) ; 
+   font-family: 'Open Sans', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container
+{
+    background-color: white;
+    width: 400px;
+    border-radius:8px;
+    overflow: hidden;
+}
+.header{
+    background-color: rgb(218, 214, 214); 
+}
+
+.header h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.form
+{
+    padding: 20px 30px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: block;
+    padding: 5px;
+}
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    outline: none;
+}
+.form-control i{
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    margin-top: 5px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to left,rgb(83, 31, 114), rgb(236, 86, 86));
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.form-control.success input{
+    border-color: rgb(48, 145, 48);
+}
+
+.form-control.error input{
+    border-color: rgb(236, 92, 66);
+}
+
+.form-control.success .fa-check-circle{
+    visibility:visible ;
+    color: rgb(48, 145, 48); ;
+}
+
+.form-control.error .fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(236, 92, 66);
+}
+
+.form-control.error small{
+    color: red;
+    visibility: visible;
+}
